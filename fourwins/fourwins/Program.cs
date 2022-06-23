@@ -6,7 +6,7 @@ namespace fourwins
     {
         public static int[,] _fields = new int[6, 7];
         public static Random _random = new Random();
-        public static int zahl = 5;
+        public const int ZAHL = 5;
 
         public static int roundPlayerOne = 1;
         public static int roundPlayerFive = 1;
@@ -16,27 +16,33 @@ namespace fourwins
 
             InitializeArray();
             //Init Players
-            var playerOne = new Player("Player One", 7);
+            var playerOne = new Player("Player One", 1);
             var playerFive = new Player("Player Five", 5);
 
             do
             {
                 if(PlayingFieldConatinsEmptySpace())
                 {
+                    var success = false;
+                    
                     do
                     {
-                        var column = GetColumn();
-                        playerOne.Y = column;
+                        success = GetXYAndCheck(playerOne);
 
                         Console.WriteLine("Player One Turn: " + roundPlayerOne);
 
-                    } while (!TryInsertValueIntoField(playerOne));
+                    } while (!success);
+
+                    InsertValue(playerOne);
                 }
                 else
                 {
                     Console.WriteLine("We have a draw!");
                 }
-
+                
+                ShowField(_fields);
+                Console.ReadKey();
+                
                 roundPlayerOne++;
 
                 if (PlayingFieldConatinsEmptySpace())
@@ -48,7 +54,7 @@ namespace fourwins
 
                         Console.WriteLine("Player Five Turn: " + roundPlayerFive);
 
-                    } while (!TryInsertValueIntoField(playerFive));
+                    } while (!GetXYAndCheck(playerFive));
                 }
                 else
                 {
@@ -72,6 +78,10 @@ namespace fourwins
 
         //}
 
+        public static void InsertValue(Player player)
+        {
+            _fields[player.Y, player.X] = player.Value;
+        }
         public static bool PlayingFieldConatinsEmptySpace()
         {
             for (var i = 0; i < 6; i++)
@@ -100,44 +110,29 @@ namespace fourwins
             return true;
         }
 
-        private static bool TryInsertValueIntoField(Player player)
+        private static bool GetXYAndCheck(Player player)
         {
-
-            for (int row = zahl; row >= 0; row--)
-            {
-                if (_fields[row, player.Y] == 0)
+            var column = GetColumn();
+            
+                for (var row = ZAHL; row >= 0; row--)
                 {
-                    _fields[row, player.Y] = player.Value;
-
-                    ShowField(_fields);
-                    Console.WriteLine("----------------------------------------------------------------------------------");
-                    Console.ReadKey();
-                    Console.WriteLine();
-
-                    return true;
-
+                    if (_fields[row, column] == 0)
+                    {
+                        player.X = column;
+                        player.Y = row;
+                        
+                        return true;
+                    }
                 }
-            }
 
-            return false;
-        }
-
-        private void xy()
-        {
-            for (int  = 0; x < length; x++)
-            {
-                for (int i = 0; i < length; i++)
-                {
-
-                }
-            }
+                return false;
         }
 
         private static int GetColumn()
         {
            var rnd = _random.Next(0, 7);
 
-            return rnd;
+           return rnd;
         }
 
         private static void InitializeArray()
