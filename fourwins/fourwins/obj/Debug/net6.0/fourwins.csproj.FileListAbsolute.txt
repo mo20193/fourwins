@@ -1,0 +1,15 @@
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\bin\Debug\net6.0\fourwins.exe
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\bin\Debug\net6.0\fourwins.deps.json
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\bin\Debug\net6.0\fourwins.runtimeconfig.json
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\bin\Debug\net6.0\fourwins.dll
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\bin\Debug\net6.0\fourwins.pdb
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.csproj.AssemblyReference.cache
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.AssemblyInfoInputs.cache
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.AssemblyInfo.cs
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.dll
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\refint\fourwins.dll
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.pdb
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\fourwins.genruntimeconfig.cache
+C:\Users\Mohammad.El-Masri\Desktop\github\fourwins\fourwins\fourwins\obj\Debug\net6.0\ref\fourwins.dll
