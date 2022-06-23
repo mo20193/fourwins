@@ -29,6 +29,7 @@ namespace fourwins
                         playerOne.Y = column;
 
                         Console.WriteLine("Player One Turn: " + roundPlayerOne);
+
                     } while (!TryInsertValueIntoField(playerOne));
                 }
                 else
@@ -56,15 +57,21 @@ namespace fourwins
 
                 roundPlayerFive++;
 
-                if(IsWinning(playerOne))
-                {
-                    ShowWinner(playerOne);
+                //if(IsWinning(playerOne))
+                //{
+                //    ShowWinner(playerOne);
 
-                    break;
-                }
+                //    break;
+                //}
 
             } while (!IsEndOfTheGame());
         }
+
+        //private static bool IsWinning(Player playerOne)
+        //{
+
+        //}
+
         public static bool PlayingFieldConatinsEmptySpace()
         {
             for (var i = 0; i < 6; i++)
@@ -101,16 +108,29 @@ namespace fourwins
                 if (_fields[row, player.Y] == 0)
                 {
                     _fields[row, player.Y] = player.Value;
+
                     ShowField(_fields);
                     Console.WriteLine("----------------------------------------------------------------------------------");
                     Console.ReadKey();
                     Console.WriteLine();
+
                     return true;
 
                 }
             }
 
             return false;
+        }
+
+        private void xy()
+        {
+            for (int  = 0; x < length; x++)
+            {
+                for (int i = 0; i < length; i++)
+                {
+
+                }
+            }
         }
 
         private static int GetColumn()
