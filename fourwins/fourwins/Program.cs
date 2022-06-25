@@ -12,7 +12,7 @@ namespace fourwins
         public static int roundPlayerOne = 1;
         public static int roundPlayerFive = 1;
 
-        static void Main(string[] args)
+        static void Main(string[] args) d
         {
 
             InitializeArray();
